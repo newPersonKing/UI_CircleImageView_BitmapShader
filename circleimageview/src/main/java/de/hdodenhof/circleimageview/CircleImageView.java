@@ -390,7 +390,7 @@ public class CircleImageView extends ImageView {
             if (drawable instanceof ColorDrawable) {
                 bitmap = Bitmap.createBitmap(COLORDRAWABLE_DIMENSION, COLORDRAWABLE_DIMENSION, BITMAP_CONFIG);
             } else {
-                /*drawable.getIntrinsicWidth() 返回的加载的图片的原始尺寸*/
+                /*drawable.getIntrinsicWidth() 返回的加载的图片的原始尺寸 把图片放在不同的文件夹下面 会返回不同的值 跟手机的分辨率 有关*/
                 bitmap = Bitmap.createBitmap(drawable.getIntrinsicWidth(), drawable.getIntrinsicHeight(), BITMAP_CONFIG);
             }
 
